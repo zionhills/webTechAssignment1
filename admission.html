@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="admission.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form action="#" onsubmit="return validateForm();">
+            <div class="form-item">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" >
+            </div>
+            <div class="form-item">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" >
+            </div>
+            <div class="form-item">
+                <label for="studentID">Student ID:</label>
+                <input type="text" name="studentID" id="studentID" >
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" >
+            </div>
+            <div class="form-item">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" >
+            </div>
+            <div class="form-item">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" >
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="faculty">Faculty:</label>
+                <select name="faculty" id="faculty">
+                    <option value="select">Select</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Business Administration">Business Administration</option>
+                    <option value="Nursing">Nursing</option>
+                    <!-- Add more faculties as needed -->
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="department">Department:</label>
+                <select name="department" id="department">
+                    <option value="select">Select</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Network and Communication Skills">Network and Communication skills</option>
+                    <option value="Information and Management">Information and Management</option>
+                    <!-- Add more departments as needed -->
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="cert">Certificate</label>
+                <input type="file" name="cert" id="cert" accept="image/*" >
+            </div>
+            <div class="form-item">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address"></textarea>
+            </div>
+            
+            <div class="form-buttons">
+                <button class="submit-button" type="submit">Submit</button>
+                <button class="cancel-button" type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="admission.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background image */
+body {
+    background-image: url('https://www.jacaranda.com.au/wp-content/uploads/2016/02/bg_student21.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container vertically and horizontally */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the container */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('image/arrow_64px.png'); /* Replace with your own arrow icon */
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options label {
+    margin-right: 10px;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+.submit-button,
+.cancel-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #007bff; /* Blue color for the Submit button */
+    color: #fff;
+}
+
+.cancel-button {
+    background-color: #ccc; /* Gray color for the Cancel button */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
